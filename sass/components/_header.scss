@@ -1,6 +1,10 @@
 /* Хедер */
 
 .header {
+    position: relative;
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid $headerLine;
 
     font-weight: 500;
@@ -11,6 +15,7 @@
 
 .flex-head {
     @extend %centeredFlex;
+    justify-content: flex-start;
 }
 
 .flex-head__logo-header {
@@ -18,8 +23,11 @@
     text-decoration: none;
     font-family: $secondaryFont;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+
+    // font-size: 26px;
+    // line-height: 1.19;
 }
 
 .flex-head__logo-item {
@@ -27,6 +35,8 @@
 }
 
 /* Навігація */
+
+
 
 .site-nav {
     margin-left: 93px;

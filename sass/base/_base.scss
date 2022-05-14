@@ -36,11 +36,20 @@ p {
 }
 
 .container {
-    width: 1200px;
+
+    
     padding: 0 15px;
     margin: 0 auto;
+
+    @media screen and (min-width: 320px) {
+       width: 100%; 
+    }
+
+    @media screen and (max-width: 319px) {
+        width: 320px;
+    }
 }
 
 .portfolio-content {
-    padding: 94px 0;
+    // padding: 94px 0;
 }

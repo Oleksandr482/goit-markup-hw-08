@@ -17,7 +17,8 @@
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 528px;
+    width: calc(100% - 30px);
+    // width: 528px;
     background-color: $body-color;
     box-shadow: 0px 1px 3px $shadowColor-12,
         0px 1px 1px $shadowColor-14,
@@ -73,7 +74,8 @@
         margin-bottom: 12px;
     
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
+        // line-height: 1.15
         text-align: center;
     
         color: $title-text-colot;
@@ -87,7 +89,8 @@
     border-radius: 4px;
     background-color: $body-color;
     color: $primary-text-color;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.14;
     outline: none;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -134,7 +137,7 @@
     margin-bottom: 10px;
 
     font-size: 12px;
-    line-height: 1.18;
+    line-height: 1.17;
     letter-spacing: 0.01em;
 }
 
@@ -162,6 +165,8 @@
     position: relative;
     @extend %centeredFlex;
     margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.17;
 }
 
 .checkbox-hidden {

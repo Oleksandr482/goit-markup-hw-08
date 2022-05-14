@@ -1,13 +1,16 @@
 /* Постійні клієнти */
 .regular-customers {
-    padding: 94px 0;
+    padding: 60px 0;
+    // padding: 94px 0;
 }
 
 .regular-customers__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    // margin-bottom: 50px;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
+    // font-size: 36px;
     line-height: 1.17;
     text-align: center;
     color: $title-text-colot;
@@ -15,14 +18,17 @@
 
 .regular-customers__list {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
 }
 
 .regular-customers__item {
-    width: calc((100%-150px) / 6);
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+    // &:not(:last-child) {
+    //     margin-right: 30px;
+    // }
 }
 
 .regular-customers__link {
