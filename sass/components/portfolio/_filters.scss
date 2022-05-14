@@ -1,0 +1,43 @@
+.filters {
+    @extend %centeredFlex;
+    margin-bottom: 50px;
+
+    & .item:not(:first-child) {
+        margin-left: 8px;
+    }
+}
+
+.filter-button {
+    background-color: $secondary-bg-color;
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 6px 22px;
+
+    font-family: roboto;
+    color: $title-text-colot;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            color: $body-color;
+            box-shadow: 0px 3px 1px $shadowColor-10, 0px 1px 2px $shadowColor-8,
+                0px 2px 2px $shadowColor-12;
+        }
+
+        &.current {
+            background-color: $accent-color;
+            color: $body-color;
+            box-shadow: 0px 3px 1px $shadowColor-10,
+                0px 1px 2px $shadowColor-8,
+                0px 2px 2px $shadowColor-12;
+        }
+}

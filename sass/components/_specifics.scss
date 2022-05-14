@@ -1,0 +1,43 @@
+.specifics {
+    padding-top: 94px;
+}
+
+.specifics__list {
+    display: flex;
+}
+
+.specifics__hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.specifics__item {
+    width: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.specifics__logo {
+    @extend %centeredFlex;
+    height: 120px;
+    background-color: $secondary-bg-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.specifics__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $title-text-colot;
+    text-transform: uppercase;
+}
