@@ -2,20 +2,28 @@
 
 .header {
     position: relative;
-    height: 60px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    
+    
     border-bottom: 1px solid $headerLine;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    @media screen and (max-width:767px) {
+        height: 60px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 .flex-head {
     @extend %centeredFlex;
-    justify-content: flex-start;
+
+    @media screen and (max-width: 767px) {
+      justify-content: flex-start;  
+    }
+    
 }
 
 .flex-head__logo-header {
@@ -26,8 +34,10 @@
     font-size: 24px;
     line-height: 1.17;
 
-    // font-size: 26px;
-    // line-height: 1.19;
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    } 
 }
 
 .flex-head__logo-item {
@@ -39,7 +49,16 @@
 
 
 .site-nav {
-    margin-left: 93px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: 88px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 
 .site-nav__list {
@@ -111,19 +130,40 @@
 
 /* Контакти */
 .contact-nav {
+    
     display: flex;
     margin-left: auto;
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    
 }
 
 .contact-nav__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
 }
 
 .contact-nav__link {
     @extend %centeredFlex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+    @media screen and (min-width: 1200px) {
+        
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
     text-decoration: none;
     color: $primary-text-color;
     fill: $primary-text-color;
@@ -139,5 +179,13 @@
 }
 
 .contact-nav__icon {
-    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
 }
