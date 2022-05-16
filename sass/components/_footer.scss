@@ -82,7 +82,10 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+    
 
     @media screen and (min-width: 768px) {
         margin-top: 5px;
@@ -138,7 +141,7 @@
     }
 
     & input {
-        width: 100%;
+       
         margin-bottom: 20px;
 
         height: 50px;
@@ -153,7 +156,11 @@
         line-height: 1.25;
         color: $address-link-color;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (max-width: 479px) {
+                width: 100%;
+            }
+
+        @media screen and (min-width: 480px) {
             width: 450px;
         }
         @media screen and (min-width: 1200px) {

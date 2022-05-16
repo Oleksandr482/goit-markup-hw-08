@@ -31,6 +31,8 @@
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+
+    
 }
 
 .projects-box {
@@ -53,7 +55,8 @@
             margin-bottom: 30px;}
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        
         &:not(:nth-child(2n)) {
             margin-right: 30px;
         }
@@ -101,6 +104,12 @@ img {
     border-bottom: 1px solid $discriptionBorderColor;
     border-left: 1px solid $discriptionBorderColor;
     border-right: 1px solid $discriptionBorderColor;
+    &.first {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-bottom: 56px;
+        }
+            
+        }
 }
 
 .project-title {
@@ -116,4 +125,7 @@ img {
 .projects-link {
     text-decoration: none;
     color: $primary-text-color;
+    
+        
+        
 }

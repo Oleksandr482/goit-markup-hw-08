@@ -19,12 +19,16 @@
 
 .flex-head {
     @extend %centeredFlex;
+    position: relative;
 
     @media screen and (max-width: 767px) {
       justify-content: flex-start;  
+      
     }
     
 }
+
+
 
 .flex-head__logo-header {
     color: $colorBlack;
