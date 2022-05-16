@@ -153,9 +153,17 @@
   <div class="container">
     <h2 class="activity__title">Чим ми займаємось</h2>
     <ul class="activity__list list">
-      <li class="activity__item"><img src="./images/box_1.jpg" width="370" alt="Десктопні додатки"><div class="activity__label">Десктопні додатки</div></li>
-      <li class="activity__item"><img src="./images/box_2.jpg" width="370" alt="Мобільні додатки"><div class="activity__label">Мобільні додатки</div></li>
-      <li class="activity__item"><img src="./images/box_3.jpg" width="370" alt="Дизайнерські рішення"><div class="activity__label">Дизайнерські рішення</div></li>
+      <li class="activity__item">
+        <img 
+        srcset="./images/box_1.jpg 1x, ./images/box_1-2x.jpg 2x"
+        src="./images/box_1.jpg" 
+        alt="Десктопні додатки"><div class="activity__label">Десктопні додатки</div></li>
+      <li class="activity__item"><img
+        srcset="./images/box_2.jpg 1x, ./images/box_2-2x.jpg 2x"
+         src="./images/box_2.jpg" width="370" alt="Мобільні додатки"><div class="activity__label">Мобільні додатки</div></li>
+      <li class="activity__item"><img
+        srcset="./images/box_3.jpg 1x, ./images/box_3-2x.jpg 2x"
+         src="./images/box_3.jpg" width="370" alt="Дизайнерські рішення"><div class="activity__label">Дизайнерські рішення</div></li>
     </ul>
   </div>
 </section>
@@ -165,7 +173,16 @@
     <h2 class="team__title">Наша команда</h2>
     <ul class="team__list list">
       <li class="team-member">
-        <img src="./images/img_1.jpg" width="270" alt="Игорь Демьяненко">
+        <img 
+        srcset="./images/img_1_270.jpg 270w,
+        ./images/img_1_354.jpg 354w,
+        ./images/img_1_450.jpg 450w,
+        ./images/img_1_540.jpg 540w,
+        ./images/img_1_708.jpg 708w,
+        ./images/img_1_900.jpg 900w"
+        src="./images/img_1_270.jpg" 
+        alt="Игорь Демьяненко"
+        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
         <div class="team-member__discr">
           <h3 class="team-member__title">Ігор Дем'яненко</h3>
           <p>Product Designer</p>
@@ -202,7 +219,16 @@
         </ul>
       </li>
       <li class="team-member">
-        <img src="./images/img_2.jpg" width="270" alt="Ольга Репина">
+        <img 
+        srcset="./images/img_2_270.jpg 270w,
+        ./images/img_2_354.jpg 354w,
+        ./images/img_2_450.jpg 450w,
+        ./images/img_2_540.jpg 540w,
+        ./images/img_2_708.jpg 708w,
+        ./images/img_2_900.jpg 900w"
+        src="./images/img_2_270.jpg"
+        alt="Ольга Репина"
+        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
         <div class="team-member__discr">
           <h3 class="team-member__title">Ольга Рєпіна</h3>
           <p>Frontend Developer</p>
@@ -239,7 +265,16 @@
         </ul>
       </li>
       <li class="team-member">
-        <img src="./images/img_3.jpg" width="270" alt="Николай Тарасов">
+        <img 
+        srcset="./images/img_3_270.jpg 270w,
+        ./images/img_3_354.jpg 354w,
+        ./images/img_3_450.jpg 450w,
+        ./images/img_3_540.jpg 540w,
+        ./images/img_3_708.jpg 708w,
+        ./images/img_3_900.jpg 900w"
+        src="./images/img_3_270.jpg" 
+        alt="Николай Тарасов"
+        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
         <div class="team-member__discr">
           <h3 class="team-member__title">Микола Тарасов</h3>
           <p>Marketing</p>
@@ -276,7 +311,16 @@
         </ul>
       </li>
       <li class="team-member">
-        <img src="./images/img_4.jpg" width="270" alt="Михаил Ермаков">
+        <img 
+        srcset="./images/img_4_270.jpg 270w,
+        ./images/img_4_354.jpg 354w,
+        ./images/img_4_450.jpg 450w,
+        ./images/img_4_540.jpg 540w,
+        ./images/img_4_708.jpg 708w,
+        ./images/img_4_900.jpg 900w"
+        src="./images/img_4_270.jpg" 
+        alt="Михаил Ермаков"
+        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
         <div class="team-member__discr">
           <h3 class="team-member__title">Михайло Єрмаков</h3>
           <p>UI Designer</p>
@@ -430,7 +474,7 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <div class="close-button">
-      <button type="button" class="close-modal" data-modal-close>
+      <button type="button" class="close-modal" aria-label="Закрити" data-modal-close>
         <svg width="30" height="30">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>

@@ -4,7 +4,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -50,12 +49,12 @@
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         &:not(:last-child) {
             margin-bottom: 30px;}
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         
         &:not(:nth-child(2n)) {
             margin-right: 30px;
@@ -90,9 +89,7 @@
     }
 }
 
-img {
-    display: block;
-}
+
 
 .project-pict {
     position: relative;
@@ -105,7 +102,7 @@ img {
     border-left: 1px solid $discriptionBorderColor;
     border-right: 1px solid $discriptionBorderColor;
     &.first {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @media screen and (min-width: 768px) and (max-width: 1199.98px) {
             padding-bottom: 56px;
         }
             

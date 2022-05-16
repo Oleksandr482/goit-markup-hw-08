@@ -6,7 +6,7 @@
 }
 
 .footer .container {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -64,7 +64,7 @@
 
 .social {
     margin-bottom: 60px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         margin-right: 13px;
     }
     @media screen and (min-width: 1200px) {
@@ -82,7 +82,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         text-align: center;
     }
     
@@ -126,7 +126,7 @@
 
 
 .subscription {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         margin: 0 auto;
         padding: 0 100px;
     }
@@ -156,7 +156,7 @@
         line-height: 1.25;
         color: $address-link-color;
 
-        @media screen and (max-width: 479px) {
+        @media screen and (max-width: 479.98px) {
                 width: 100%;
             }
 

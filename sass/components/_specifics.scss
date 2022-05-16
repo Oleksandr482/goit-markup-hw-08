@@ -1,5 +1,5 @@
 .specifics {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         padding: 60px 0;
     }
     @media screen and (min-width: 1200px) {
@@ -8,7 +8,7 @@
 }
 
 .specifics__list {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -28,14 +28,14 @@
 
 .specifics__item {
     width: 100%;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
          &:not(:last-child) {
         margin-bottom: 30px;
     }
     }
    
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         width: calc((100% - 60px)/2);
         margin: 15px;
     }
