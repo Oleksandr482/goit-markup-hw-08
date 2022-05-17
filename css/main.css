@@ -295,6 +295,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  min-width: 320px;
+  overflow-y: scroll;
 }
 
 h1,
@@ -617,7 +619,8 @@ img {
   left: 0;
   top: 0;
   line-height: 1.18;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: scroll;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -668,7 +671,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  min-width: 320px;
   height: calc(100vh - 96px);
   margin: 0 auto;
 }

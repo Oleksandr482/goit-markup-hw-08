@@ -35,7 +35,8 @@
     left: 0;
     top: 0;
     line-height: 1.18;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
     
     width: 100vw;
     height: 100vh;
@@ -82,7 +83,7 @@
     display: flex;
         flex-direction: column;
         justify-content: space-between;
-    width: 100%;
+    min-width: 320px;
     height: calc(100vh - 96px);
     // padding: 0 15px;
     margin: 0 auto;
