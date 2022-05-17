@@ -1,7 +1,7 @@
 .hero {
     background-color: $primary-bg-color;
     background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
-        url(../images/bg_hero_img.jpg);
+        url(../images/hero_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: auto;
@@ -11,9 +11,36 @@
     padding: 118px 0;
     text-align: center;
 
+    @media screen and (min-width: 480px) {
+        background-image: linear-gradient(to right, $heroBgColor, $heroBgColor), url(../images/hero_tablet.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, $heroBgColor, $heroBgColor), url(../images/hero_desktop.jpg);
+    }
+
     @media screen and (min-width: 1200px) {
         height: 600px;
         padding: 200px 0;
+    }
+
+        
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
+            url(../images/hero_mobile@2x.jpg);
+
+            @media screen and (min-width: 480px) {
+                    background-image: linear-gradient(to right, $heroBgColor, $heroBgColor), url(../images/hero_tablet@2x.jpg);
+            }
+        
+            @media screen and (min-width: 768px) {
+                background-image: linear-gradient(to right, $heroBgColor, $heroBgColor), url(../images/hero_desktop@2x.jpg);
+            }
     }
 }
 
