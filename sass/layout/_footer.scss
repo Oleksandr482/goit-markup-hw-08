@@ -14,6 +14,7 @@
     }
     @media screen and (min-width:1200px) {
         display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -44,6 +45,9 @@
     font-style: normal;
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .address__link {
@@ -68,7 +72,7 @@
         margin-right: 13px;
     }
     @media screen and (min-width: 1200px) {
-        margin-left: 70px;
+        // margin-left: 93px;
     }
 
 }
@@ -128,10 +132,10 @@
 .subscription {
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         margin: 0 auto;
-        padding: 0 100px;
+        // padding: 0 100px;
     }
     @media screen and (min-width: 1200px) {
-        margin-left: 93px;
+        // margin-left: 93px;
     }
 }
 
@@ -156,9 +160,9 @@
         line-height: 1.25;
         color: $address-link-color;
 
-        @media screen and (max-width: 479.98px) {
-                width: 100%;
-            }
+        // @media screen and (max-width: 479.98px) {
+        //         width: 100%;
+        //     }
 
         @media screen and (min-width: 480px) {
             width: 450px;

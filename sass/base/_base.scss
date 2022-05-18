@@ -17,8 +17,6 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    min-width: 320px;
-    overflow-y: scroll;
 }
 
 h1,
@@ -29,50 +27,6 @@ h5,
 h6,
 p {
     margin: 0;
-}
-
-.list {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-}
-
-.container {
-    
-    padding: 0 15px;
-    margin: 0 auto;
-
-    @media screen and (min-width: 100px) and (max-width: 319.98px) {
-            width: 320px;
-            margin: 0;
-            overflow-x: scroll;
-        }
-
-    @media screen and (min-width: 320px) and (max-width: 479.98px) {
-       width: 100%; 
-    }
-
-    @media screen and (min-width: 480px) and (max-width: 768.98px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
-
-    
-}
-
-.portfolio-content {
-    padding: 60px 0;
-
-    @media screen and (min-width: 1200px) {
-        padding: 94px 0;
-    }
 }
 
 img {

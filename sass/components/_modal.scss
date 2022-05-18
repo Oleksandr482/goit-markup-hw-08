@@ -90,11 +90,16 @@
     & b {
         margin-bottom: 12px;
     
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.5;
         text-align: center;
     
         color: $title-text-colot;
+
+        @media screen and (min-width: 453px) {
+            font-size: 20px;
+            line-height: 1.5;
+        }
 
         @media screen and (min-width: 1200px) {
             line-height: 1.15
@@ -185,8 +190,22 @@
     position: relative;
     @extend %centeredFlex;
     margin-bottom: 30px;
-    font-size: 12px;
+    font-size: 7px;
     line-height: 1.17;
+    letter-spacing: 0;
+    @media screen and (min-width: 360px) {
+        font-size: 8px;
+    }
+    @media screen and (min-width: 393px) {
+        font-size: 10px;
+    }
+    @media screen and (min-width: 445px) {
+        font-size: 12px;
+    }
+    @media screen and (min-width: 463px) {
+        letter-spacing: 0.03em;
+    }
+
 }
 
 .checkbox-hidden {
@@ -197,7 +216,7 @@
     clip: rect(0 0 0 0);
 
     &:checked+.checkbox {
-        background-image: url(../images/icon-check.svg);
+        background-image: url(../images/svg/icon-check.svg);
         background-size: contain;
         background-origin: border-box;
         background-color: $accent-color;

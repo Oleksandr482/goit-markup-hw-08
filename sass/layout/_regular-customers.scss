@@ -1,11 +1,4 @@
 /* Постійні клієнти */
-.regular-customers {
-    padding: 60px 0;
-    @media screen and (min-width: 1200px) {
-        padding: 94px 0;
-    }
-}
-
 .regular-customers__title {
     margin-bottom: 30px;
 
@@ -29,20 +22,14 @@
 
 .regular-customers__item {
     width: calc((100% - 60px) / 2);
-    
-    @media screen and (max-width: 1199.98px) {
-        margin: 15px;
-    }
+    margin: 15px;
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 90px)/3);
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 150px)/6);
-        &:not(:last-child) {
-        margin-right: 30px;
-        }
+        width: calc((100% - 180px)/6);
     }
     
 }

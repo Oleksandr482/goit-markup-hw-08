@@ -1,12 +1,5 @@
 /* Наша команда */
 .team {
-    padding: 60px 0;
-    @media screen and (min-width: 1200px) {
-        padding: 94px 0;
-    }
-}
-
-.team-bg {
     background-color: $secondary-bg-color;
 }
 
@@ -48,13 +41,13 @@
     line-height: 1.19;
     text-align: center;
 
-    @media screen and (max-width: 767.99px) {
+    @media screen and (max-width: 767.98px) {
         &:not(:last-child) {
         margin-bottom: 30px;
     }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         width: calc((100% - 60px)/2);
         margin: 15px;
     }

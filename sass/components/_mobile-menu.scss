@@ -26,8 +26,11 @@
 
 .js-close-menu {
     position: absolute;
-    right: -30px;
-    top: -37px;
+    right: 10px;
+    top: 10px;
+    @media screen and (min-width: 480px) {
+        right: calc((100% - 460px)/2);
+    }
 }
 
 .menu-container {
@@ -35,7 +38,6 @@
     left: 0;
     top: 0;
     line-height: 1.18;
-    overflow-x: scroll;
     overflow-y: scroll;
     
     width: 100vw;
@@ -43,7 +45,7 @@
     
     background-color: $body-color;
     z-index: 999;
-    padding: 48px 40px;
+    padding: 48px 0;
     transform: translateY(-150%);
 
     transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,13 +56,21 @@
 
     }
 
+    &__list {
+        margin-bottom: 40px;
+    }
+
     &__item:not(:last-child) {
         margin-bottom: 32px;
     }
 
     &__link {
         
-        font-size: 40px;
+        font-size: 30px;
+
+        @media screen and (min-width: 480px) {
+            font-size: 40px;
+        }
         
         text-decoration: none;
         color: $title-text-colot;
@@ -79,14 +89,15 @@
 }
 
 .mobile-nav {
-    position: relative;
+    // position: relative;
     display: flex;
         flex-direction: column;
         justify-content: space-between;
-    min-width: 320px;
     height: calc(95vh - 96px);
-    // padding: 0 15px;
+    // max-width: 450px;
+    padding: 0 15px;
     margin: 0 auto;
+    width: 320px;
 
     @media screen and (min-width: 480px) {
         width: 400px;
@@ -103,13 +114,19 @@
     &__tel {
         text-decoration: none;
         color: $accent-color;
-        font-size: 40px;
+        font-size: 30px;
+        @media screen and (min-width: 480px) {
+                font-size: 40px;
+            }
     }
 
     &__mail {
         text-decoration: none;
         color: $primary-text-color;
-        font-size: 24px;
+        font-size: 20px;
+        @media screen and (min-width: 480px) {
+                font-size: 24px;
+            }
     }
 }
 
@@ -118,14 +135,21 @@
     justify-content: space-between;
 
     &__item {
-        font-size: 22px;
+        font-size: 18px;
+
+        @media screen and (min-width: 480px) {
+                font-size: 22px;
+            }
         color: rgba(33, 33, 33, 0.2);
     }
 
     &__link {
         text-decoration: none;
         color: $accent-color;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.22;
+        @media screen and (min-width: 480px) {
+                font-size: 18px;
+            }
     }
 }

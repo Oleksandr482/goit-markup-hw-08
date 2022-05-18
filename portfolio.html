@@ -30,7 +30,7 @@
                 <li class="contact-nav__item">
                     <a href="mailto:info@devstudio.com" class="contact-nav__link">
                         <svg class="contact-nav__icon">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
+                            <use href="./images/svg/sprite.svg#icon-envelope"></use>
                         </svg>
                         <span>info@devstudio.com</span>
                     </a>
@@ -38,7 +38,7 @@
                 <li class="contact-nav__item">
                     <a href="tel:+380961111111" class="contact-nav__link">
                         <svg class="contact-nav__icon">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                            <use href="./images/svg/sprite.svg#icon-smartphone"></use>
                         </svg>
                         <span>+38 096 111 11 11</span>
                     </a>
@@ -47,7 +47,7 @@
 
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="40" height="40">
-                    <use href="./images/mobile-menu.svg#icon-open-menu"></use>
+                    <use href="./images/svg/mobile-menu.svg#icon-open-menu"></use>
                 </svg>
             </button>
 
@@ -55,7 +55,7 @@
                 <nav class="mobile-nav">
                     <button class="menu-toggle js-close-menu">
                         <svg width="40" height="40">
-                            <use href="./images/mobile-menu.svg#icon-close-menu"></use>
+                            <use href="./images/svg/mobile-menu.svg#icon-close-menu"></use>
                         </svg>
                     </button>
                     <div>
@@ -102,7 +102,7 @@
     </header>
     <!--Контент-->
     <main>
-        <section class="portfolio-content">
+        <section class="portfolio-content section">
             <div class="container">
                 <ul class="filters list">
                     <li class="item"><button type="button" class="filter-button current">Все</button></li>
@@ -115,10 +115,9 @@
                     <li class="projects-box">
                         <a href="" class="projects-link">
                             <div class="project-pict">
-                                <img srcset="./images/project_1_450.jpg 450w,
-                                             ./images/project_1_900.jpg 900w"
-                                src="./images/project_1_450.jpg" 
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                <img srcset="./images/projects/project_1.jpg 1x,
+                                             ./images/projects/project_1@2x.jpg 2x"
+                                src="./images/projects/project_1.jpg" 
                                 alt="Проект 1">
                                 <div class="project-discr">
                                     <p>Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
@@ -136,10 +135,10 @@
                     <li class="projects-box">
                         <a href="" class="projects-link">
                             <div class="project-pict">
-                                <img srcset="./images/project_2_450.jpg 450w,
-                                             ./images/project_2_900.jpg 900w" 
-                                             src="./images/project_2_450.jpg"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                <img srcset="./images/projects/project_2.jpg 1x,
+                                             ./images/projects/project_2@2x.jpg 2x" 
+                                             src="./images/projects/project_2.jpg"
+                                    
                                     alt="Проект 2">
                                     <div class="project-discr">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea, aliquid
@@ -155,10 +154,10 @@
                     <li class="projects-box">
                         <a href="" class="projects-link">
                             <div class="project-pict">
-                                <img srcset="./images/project_3_450.jpg 450w,
-                                             ./images/project_3_900.jpg 900w" 
-                                             src="./images/project_3_450.jpg"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                <img srcset="./images/projects/project_3.jpg 1x,
+                                             ./images/projects/project_3@2x.jpg 2x" 
+                                             src="./images/projects/project_3.jpg"
+                                    
                                     alt="Проект 3">
                                 <div class="project-discr">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea, aliquid
@@ -175,10 +174,10 @@
                         <a href="" class="projects-link">
                             <div class="project-pict">
                                 <img 
-                                srcset="./images/project_4_450.jpg 450w,
-                                ./images/project_4_900.jpg 900w" 
-                                src="./images/project_4_450.jpg"
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                srcset="./images/projects/project_4.jpg 1x,
+                                ./images/projects/project_4@2x.jpg 2x" 
+                                src="./images/projects/project_4.jpg"
+                                
                                 alt="Проект 4"
                                 >
                                 <div class="project-discr">
@@ -195,7 +194,7 @@
                     <li class="projects-box">
                         <a href="" class="projects-link">
                             <div class="project-pict">
-                                <img srcset="./images/project_5_450.jpg 450w, ./images/project_5_900.jpg 900w" src="./images/project_5_450.jpg" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Проект 5">
+                                <img srcset="./images/projects/project_5.jpg 1x, ./images/projects/project_5@2x.jpg 2x" src="./images/projects/project_5.jpg" alt="Проект 5">
                                 <div class="project-discr">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea, aliquid
                                         enim veritatis sapiente expedita pariatur ullam et amet.</p>
@@ -210,8 +209,8 @@
                     <li class="projects-box">
                         <a href="" class="projects-link">
                             <div class="project-pict">
-                                <img srcset="./images/project_6_450.jpg 450w, ./images/project_6_900.jpg 900w" src="./images/project_6_450.jpg"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Проект 6">
+                                <img srcset="./images/projects/project_6.jpg 1x, ./images/projects/project_6@2x.jpg 2x" src="./images/projects/project_6.jpg"
+                                    alt="Проект 6">
                                 <div class="project-discr">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea, aliquid
                                         enim veritatis sapiente expedita pariatur ullam et amet.</p>
@@ -226,8 +225,8 @@
                     <li class="projects-box">
                         <a href="" class="projects-link">
                             <div class="project-pict">
-                                <img srcset="./images/project_7_450.jpg 450w, ./images/project_7_900.jpg 900w" src="./images/project_7_450.jpg"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Проект 7">
+                                <img srcset="./images/projects/project_7.jpg 1x, ./images/projects/project_7@2x.jpg 2x" src="./images/projects/project_7.jpg"
+                                    alt="Проект 7">
                                 <div class="project-discr">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea, aliquid
                                         enim veritatis sapiente expedita pariatur ullam et amet.</p>
@@ -242,8 +241,8 @@
                     <li class="projects-box">
                         <a href="" class="projects-link">
                             <div class="project-pict">
-                                <img srcset="./images/project_8_450.jpg 450w, ./images/project_8_900.jpg 900w" src="./images/project_8_450.jpg"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Проект 8">
+                                <img srcset="./images/projects/project_8.jpg 1x, ./images/projects/project_8@2x.jpg 2x" src="./images/projects/project_8.jpg"
+                                 alt="Проект 8">
                                 <div class="project-discr">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea, aliquid
                                         enim veritatis sapiente expedita pariatur ullam et amet.</p>
@@ -258,8 +257,8 @@
                     <li class="projects-box">
                         <a href="" class="projects-link">
                             <div class="project-pict">
-                                <img srcset="./images/project_9_450.jpg 450w, ./images/project_9_900.jpg 900w" src="./images/project_9_450.jpg"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Проект 9">
+                                <img srcset="./images/projects/project_9.jpg 1x, ./images/projects/project_9@2x.jpg 2x" src="./images/projects/project_9.jpg"
+                                    alt="Проект 9">
                                 <div class="project-discr">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea, aliquid
                                         enim veritatis sapiente expedita pariatur ullam et amet.</p>
@@ -283,8 +282,10 @@
                 <a href="./" lang="en" class="footer__logo"><span class="footer__logo-item">Web</span>Studio</a>
                 <address class="address">
                     м. Київ, пр-т Лесі Українки, 26
-                    <a href="mailto:info@example.com" class="address__link">info@example.com</a>
-                    <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                <ul class="address__list list">
+                    <li class="address__item"><a href="mailto:info@example.com" class="address__link">info@example.com</a></li>
+                    <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a></li>
+                </ul>
                 </address>
             </div>
             <div class="social">
@@ -293,28 +294,28 @@
                     <li class="social__item">
                         <a href="">
                             <svg width="20" height="20">
-                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                <use href="./images/svg/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="">
                             <svg width="20" height="20">
-                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                <use href="./images/svg/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="">
                             <svg width="20" height="20">
-                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                <use href="./images/svg/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="">
                             <svg width="20" height="20">
-                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                <use href="./images/svg/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
@@ -327,7 +328,7 @@
                     <button type="submit">
                         Підписатися
                         <svg class="subscription__icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
+                            <use href="./images/svg/icons.svg#icon-send"></use>
                         </svg>
                     </button>
                 </div>
