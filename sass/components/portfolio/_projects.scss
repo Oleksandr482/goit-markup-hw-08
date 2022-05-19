@@ -20,12 +20,36 @@
 
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding: 20px 15px;
     background-color: $projectDiscrBgColor;
 
     color: $body-color;
-    font-size: 18px;
-    line-height: 1.56;
+    font-size: 16px;
+    line-height: 1.36;
+
+    @media screen and (min-width: 400px) {
+        padding: 50px 24px;
+        font-size: 18px;
+        line-height: 1.56;
+    
+        }
+
+    @media screen and (min-width: 480px) {
+        padding: 49px 40px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+            padding: 45px 20px;
+    
+        }
+
+    @media screen and (min-width: 1200px) {
+        padding: 50px 24px;
+
+    }
+
+    
 
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

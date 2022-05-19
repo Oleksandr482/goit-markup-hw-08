@@ -1817,11 +1817,11 @@ img {
   top: 100%;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 20px 15px;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 16px;
+  line-height: 1.36;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -1830,6 +1830,32 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+
+@media screen and (min-width: 400px) {
+  .project-discr {
+    padding: 50px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .project-discr {
+    padding: 49px 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-discr {
+    padding: 45px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-discr {
+    padding: 50px 24px;
+  }
 }
 
 .projects-box {
