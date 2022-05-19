@@ -286,6 +286,16 @@ html {
           box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
@@ -295,16 +305,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
 }
 
 img {
@@ -1161,27 +1161,32 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer .container {
+  .footer-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0 76px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .container {
+  .footer-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1208,10 +1213,15 @@ img {
   color: #2196f3;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .address-box {
+    margin-bottom: 60px;
+  }
+}
+
 .address {
   font-style: normal;
   text-align: center;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1234,13 +1244,9 @@ img {
   fill: #2196f3;
 }
 
-.social {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (max-width: 767.98px) {
   .social {
-    margin-right: 13px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1258,20 +1264,6 @@ img {
   .social__title,
   .subscription__title {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .social__title,
-  .subscription__title {
-    margin-top: 5px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .social__title,
-  .subscription__title {
-    margin-top: 12px;
   }
 }
 
@@ -1327,6 +1319,7 @@ img {
 
 .subscription__input input {
   margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1351,6 +1344,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscription__input input {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
